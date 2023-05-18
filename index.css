@@ -1,0 +1,458 @@
+/*import external fonts google family poppins style*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*all items style*/
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/*body style*/
+body{
+  height: 100vh;
+  overflow: hidden;
+  background: #010449;
+}
+
+/*container style*/
+.container{
+    width: 85%;
+    background: #010449;
+    text-align: center;
+    border-radius: 5px;
+    padding: 50px 35px 10px 35px;
+    margin: auto;
+}
+
+/*container header style*/
+.container header{
+    border: none 2px solid;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/*container header div style*/
+.container header div{
+    border: none 2px solid;
+    padding-top: 3.5%;
+    padding-left: 5%;
+    padding-bottom: 4.5%;
+}
+
+/*container header div style*/
+.container header div p{
+    font-weight: 200;
+    font-size: smaller;
+}
+
+/*container main style*/
+.container main{
+    border-top: none 3px solid;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/*container multiskill-level-form style*/
+.container .multiskill-level-form{
+    border-top: 2px solid #1f2061; 
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/*stylesheet under construction, please be careful...*/
+
+
+/*container form-outer style*/
+.container .form-outer{
+    border-left: 2px solid #1f2061;
+    width: 80%;
+    overflow: hidden;
+    padding: 1%;
+  }
+  
+/*container form-outer form style*/
+  .container .form-outer form{
+    border: 2px solid none;
+    display: flex;
+    width: 510%;
+  }
+
+  
+/*form-outer form .page style*/
+  .form-outer form .page{
+    width: 25% !important;
+    transition: margin-left 0.3s ease-in-out;
+  }
+
+  
+/*form-outer form page and title style*/
+  .form-outer form .page .title{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  
+/*form-outer form page and field style*/
+  .form-outer form .page .field{
+    width: 90%;
+    height: 45px;
+    margin: 45px 0;
+    display: flex;
+    position: relative;
+    border: 2px solid none;
+  }
+
+  
+/*form-outer form page and btns-field style*/
+  .form-outer form .page .btns-field{
+    width: 90%;
+    height: 45px;
+    margin: 40px 0;
+    display: flex;
+    position: relative;
+    border: 2px solid none;
+    justify-content: right;
+
+  }
+
+/*form page field and label style*/
+  form .page .field .label{
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+  }
+  
+/*form page field and input style*/
+  form .page .field input{
+    height: 100%;
+    width: 100%;
+    border: 2.5px solid #21c5ce;
+    border-radius: 0.5rem;
+    font-size: 19px;
+    color: white
+  }
+
+  /*form page field and input type style*/
+  form .page .field input[type="text"]{
+    background : transparent;
+  }
+
+/*form page field and select style*/
+  form .page .field select{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  form .page .btns-field button{
+    width: 15%;
+    height: calc(100% + 5px);
+    border: 5px solid #21c5ce;
+    background: #21c5ce;
+    border-radius: 5rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    color: black !important;
+  }
+
+  form .page .btns-field button:hover{
+    background: #21c5ce;
+    font-weight: 700;
+    transition: all 2s linear;
+
+  }
+  form .page .btns button{
+    margin-top: -20px!important;
+  }
+  form .page .btns button.prev{
+    margin-right: 3px;
+    font-size: 17px;
+  }
+  form .page .btns button.next{
+    margin-left: 3px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***under construction*****/
+
+
+ /*container .progress-bar style*/
+  .container .progress-bar{
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+    user-select: none;
+    margin-top: 2%;
+  }
+
+  
+ /*container .progress-bar step style*/
+  .container .progress-bar .step{
+    border: 2px solid none;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 10%;
+  }
+
+ /*.progress-bar .step .c_container style*/
+  .progress-bar .step .c_container{
+    border: 2px solid none;
+    width: 180px;
+  }
+
+   /*.container .progress-bar .step c_container p style*/
+   .container .progress-bar .step .c_container p{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 8px;
+    margin-right: 18px;
+  }
+
+  /*.progress-bar .step .c_container p span style*/
+  .progress-bar .step .c_container p span{
+    font-size: xx-small;
+  }
+
+
+ /*.progress-bar .step .bullet style*/
+  .progress-bar .step .bullet{
+    height: 30px;
+    width: 30px;
+    border: 2px solid #47497a;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    background: #47497a;
+  }
+
+   /*.progress-bar .step .dot style*/
+   .progress-bar .step .dot{
+    height: 10px;
+    width: 10px;
+    border: 2px solid #1f2061;
+    border-radius: 50%;
+    background:  transparent;
+    position: fixed;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    margin-left: 14.8%;
+    margin-top: 0.5%;
+  }
+
+  .progress-bar .step .dot.active{
+    border-color: #21c5ce;
+    background: #21c5ce;
+  }
+
+  .progress-bar .step .bullet.active{
+    border-color: #21c5ce;
+    background: #21c5ce;
+  }
+
+  .progress-bar .step .dot span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .progress-bar .step .bullet span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .progress-bar .step .dot.active span{
+    display: none;
+  }
+
+  .progress-bar .step .bullet.active span i{
+    color: black !important;
+  }
+
+ 
+  
+
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after{
+    position: absolute;
+    content: '';
+    top: 30px;
+    left: 14px;
+    height: 52px;
+    width: 3px;
+    background: #47497a;
+  }
+
+  .progress-bar .step .bullet.active:after{
+    background: #21c5ce;
+    transform: scaleY(0);
+    transform-origin: left;
+    animation: animate 0.3s linear forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleY(1);
+    }
+  }
+  .progress-bar .step:last-child .bullet:before,
+  .progress-bar .step:last-child .bullet:after{
+    display: none;
+  }
+  .progress-bar .step p.active{
+    color: #21c5ce;
+    transition: 0.2s linear;
+  }
+
+
+ 
+   
+
+
+  /*add ons**/
+
+  .field-line {
+    border : 1px solid #1f2061;
+    border-radius: 2em;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 90%;
+  }
+
+  .slide-page-header {
+    border: 2px solid none;
+    line-height: 2.8em;
+  }
+
+  .media-query-slide-page-header {
+    display: none;
+  }
+
+
+
+
+
+  @media(max-width: 600px) {
+
+    .step {
+        border: 2px solid red;
+        width: fit-content !important;
+    }
+    
+    /*style the dot*/
+    .dot {
+        display: none;
+    }
+
+     /*.progress-bar .step .bullet style*/
+    .progress-bar .step .bullet{
+        height: 25px;
+        width: 25px;
+        border: 2px solid red;
+        border-radius: 50%;
+        position: relative;
+        transition: 0.2s;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 25px;
+        background: #47497a;
+
+    }
+
+    /*.container .progress-bar .step c_container p style*/
+   .container .progress-bar .step .c_container p{
+    margin-right: 60px;
+    }
+
+  /*container form-outer style*/
+    .container .form-outer{
+        width: 90%;
+    }
+
+    /*container multiskill-level-form style*/
+    .container .multiskill-level-form{
+        display: block;
+    }
+
+     /*container .progress-bar style*/
+    .container .progress-bar{
+        flex-direction: row;
+    }
+
+    .media-query-slide-page-header {
+        display: flex;
+      }
+
+ /*container .progress-bar style*/
+ .container .progress-bar{
+    display: none;
+  }
+
+  
+ /*container .progress-bar step style*/
+  .container .progress-bar .step{
+    display: none;
+  }
+
+ /*.progress-bar .step .c_container style*/
+  .progress-bar .step .c_container{
+    display: none;
+  }
+
+   /*.container .progress-bar .step c_container p style*/
+   .container .progress-bar .step .c_container p{
+    display: none;
+  }
+
+  form .page .btns-field button{
+    width: 55%;
+  }
+
+  .media-query-slide-page-header .c_container p {
+    font-size: x-large;
+  }
+
+  }
