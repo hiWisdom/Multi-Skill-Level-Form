@@ -1,3 +1,8 @@
+
+
+
+try {
+
 const slidePage = document.querySelector(".slide-page");
 const nextBtnFirst = document.querySelector(".firstNext");
 const prevBtnSec = document.querySelector(".prev-1");
@@ -18,6 +23,7 @@ let current = 1;
 window.onload = function(){
   dot[current - 1].classList.add("active");
   bullet[current - 1].classList.add("active");
+  slidePage.style.marginLeft = "6%";
 }
 
 //next button functions with animation
@@ -73,7 +79,7 @@ submitBtn.addEventListener("click", function(){
 
 prevBtnSec.addEventListener("click", function(event){
   event.preventDefault();
-  slidePage.style.marginLeft = "0%";
+  slidePage.style.marginLeft = "6%";
   dot[current - 1].classList.remove("active");
   bullet[current - 1].classList.remove("active");
   progressText[current - 1].classList.remove("active");
@@ -106,3 +112,50 @@ prevBtnFifth.addEventListener("click", function(event){
     progressText[current - 1].classList.remove("active");
     current -= 1;
   });
+
+
+
+
+  
+
+
+  function loadAPICountry() {
+
+    
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+    
+        const countryCodeDropDown = document.querySelector("#c_tel_country_code");
+    
+        fetch('https://restcountries.com/v2/all').then(res => {
+        return res.json();
+        }).then(data => {
+        let output = "";
+        data.forEach(country => {
+            console.log(country.name);
+            output +=`<option value="${country.name}">+${country.callingCodes} ${country.name}</option>`;
+        })
+        countryCodeDropDown.innerHTML = output;
+        }).catch(err => {
+        console.log(err);
+        })
+    
+    });
+
+}
+
+loadAPICountry();
+
+
+
+
+  
+}
+
+
+
+
+catch(err) {
+    window.innerHTML = ` ${err.message}`
+}
+

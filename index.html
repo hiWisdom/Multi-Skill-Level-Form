@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---favicon-->
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqh-XpWAkI5y-Tp8KoDkTDlmNZ0pwQK_epGw&usqp=CAU"/>
+    
   </head>
 
 
@@ -150,10 +154,14 @@
                                 <div class="title">Let's start with your name</div>
                                 <p>Please fill in the details below</p>
                             </div>
+
                             <div class="field-line"></div>
+
                             <div class="field">
-                            <div class="label">Enter your name</div>
-                            <input type="text" class="input-text-fields">
+
+                                <div class="label">Enter your name</div>
+                                <input type="text">
+
                             </div>
                             <div class="btns-field btns">
                             <button class="firstNext next">Next Step</button>
@@ -161,25 +169,31 @@
                         </div>
         
                         <div class="page">
+
                             <div class="media-query-slide-page-header">
                                 <div class="c_container">
                                     <p>City<br>Location</p>
                                 </div>
                             </div>
+
                             <div class="slide-page-header">
                                 <p>Step 2/5</p>
                                 <div class="title">City Location Infomation:</div>
                                 <p>Please fill in the details below</p>
                             </div>
+
                             <div class="field-line"></div>
+
                             <div class="field">
-                            <div class="label">Email Address</div>
-                            <input type="text">
+
+                                <div class="label">Current City</div>
+                                <input type="text">
+
                             </div>
-                            <div class="field">
+                            <!-- <div class="field">
                             <div class="label">Phone Number</div>
                             <input type="Number">
-                            </div>
+                            </div> -->
                             <div class="btns-field btns">
                             <button class="prev-1 prev">Previous Step</button>
                             <button class="next-1 next">Next Step</button>
@@ -202,12 +216,8 @@
 
                             <div class="field-line"></div>
                             <div class="field">
-                            <div class="label">Email Address</div>
-                            <input type="text">
-                            </div>
-                            <div class="field">
                             <div class="label">Phone Number</div>
-                            <input type="Number">
+                            <input type="Number" maxlength="11">
                             </div>
                             <div class="btns-field btns">
                             <button class="prev-2 prev">Previous Step</button>
@@ -230,16 +240,8 @@
                             </div>
                             <div class="field-line"></div>
                             <div class="field">
-                            <div class="label">Date</div>
-                            <input type="text">
-                            </div>
-                            <div class="field">
-                            <div class="label">Gender</div>
-                            <select>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Other</option>
-                            </select>
+                            <div class="label">Address</div>
+                            <textarea></textarea>
                             </div>
                             <div class="btns-field btns">
                             <button class="prev-3 prev">Previous Step</button>
@@ -262,13 +264,10 @@
                             </div>
                             <div class="field-line"></div>
                             <div class="field">
-                            <div class="label">Username</div>
-                            <input type="text">
+                            <div class="label">Countries</div>
+                            <select id="c_tel_country_code" class="c_create_an_account_inputs"></select>
                             </div>
-                            <div class="field">
-                            <div class="label">Password</div>
-                            <input type="password">
-                            </div>
+
                             <div class="btns-field btns">
                             <button class="prev-4 prev">Previous Step</button>
                             <button class="submit">Submit</button>

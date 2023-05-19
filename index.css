@@ -88,15 +88,18 @@ body{
   .container .form-outer form{
     border: 2px solid none;
     display: flex;
-    width: 510%;
+    width: 410%;
   }
 
-  
+
+    
 /*form-outer form .page style*/
   .form-outer form .page{
     width: 25% !important;
     transition: margin-left 0.3s ease-in-out;
   }
+
+
 
   
 /*form-outer form page and title style*/
@@ -108,7 +111,7 @@ body{
 
   
 /*form-outer form page and field style*/
-  .form-outer form .page .field{
+  .form-outer .page .field{
     width: 90%;
     height: 45px;
     margin: 45px 0;
@@ -150,6 +153,25 @@ body{
   /*form page field and input type style*/
   form .page .field input[type="text"]{
     background : transparent;
+  }
+
+  form .page .field input[type="number"]{
+    background : transparent;
+  }
+
+  form .page .field textarea{
+    background : transparent;
+    border: 2.5px solid #21c5ce;
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+
+  form .page .field select{
+    background : #1f2061;
+    border: 2.5px solid #21c5ce;
+    border-radius: 0.5rem;
+    width: 90%;
+    cursor: pointer;
   }
 
 /*form page field and select style*/
